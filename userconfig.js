@@ -137,12 +137,12 @@ const CONFIG = new Config({
               icon: 'basket-code'
             },
             {
-              name: 'Trending Github',
+              name: 'Trending',
               url: 'https://github.com/trending',
               icon: 'brand-github'
             },
             {
-              name: 'NullPHPScript',
+              name: 'Null',
               url: 'https://nullphpscript.com/',
               icon: 'brand-php'
             }
