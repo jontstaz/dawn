@@ -153,23 +153,21 @@ const CONFIG = new Config({
           links: [
             {
               name: 'Nulled',
-              url: 'https://nulled.to',
-              icon: 'disc'
+              url: 'https://nulled.to'
             },
             {
               name: 'Cracked',
-              url: 'https://cracked.io',
-              icon: 'disc'
+              url: 'https://cracked.io'
             },
             {
               name: 'HackForums',
               url: 'https://hackforums.net/',
-              icon: 'disc'
+              icon: 'circle-letter-h'
             },
             {
               name: 'Babiato',
-              url: 'https://boards.4channel.org/mu/',
-              icon: 'disc'
+              url: 'https://babia.to/',
+              icon: 'square-letter-b'
             }
           ]
         },
