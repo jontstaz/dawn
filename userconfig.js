@@ -1,12 +1,12 @@
 const CONFIG = new Config({
   crypto: {
-    coin: 'ETH',
+    coin: 'BTC',
     currency: 'USD',
     refreshIn: 10
   },
   overrideStorage: true, // override localStorage with fixed userconfig values
   temperature: {
-    location: 'Matão, São Paulo',
+    location: 'Melbourne, Australia',
     scale: 'C'
   },
   clock: {
@@ -36,19 +36,19 @@ const CONFIG = new Config({
         name: 'fun',
         links: [
           {
-            url: 'https://4chan.org/wsg/',
-            name: '/wsg/'
+            url: 'https://4chan.org/biz/',
+            name: '/biz/'
           },
           {
-            name: '/out/',
-            url: 'https://4chan.org/out',
+            name: '/g/',
+            url: 'https://4chan.org/g/',
             icon: 'leaf',
             icon_color: '#64876d'
           },
           {
-            name: '/lit/',
-            url: 'https://4chan.org/lit/',
-            icon: 'book'
+            name: '/tv/',
+            url: 'https://4chan.org/tv/',
+            icon: 'device-tv'
           },
           {
             name: '/v/',
@@ -57,9 +57,9 @@ const CONFIG = new Config({
             icon_color: '#8b647b'
           },
           {
-            name: '/p/',
-            url: 'https://4chan.org/p/',
-            icon: 'camera'
+            name: '/r9k/',
+            url: 'https://4chan.org/r9k/',
+            icon: 'robot'
           }
         ]
       },
@@ -159,9 +159,9 @@ const CONFIG = new Config({
               url: 'https://www.reddit.com/r/unixporn/'
             },
             {
-              name: 'r/mechkbds/',
-              url: 'https://www.reddit.com/r/MechanicalKeyboards/',
-              icon: 'keyboard',
+              name: 'r/selfhosted/',
+              url: 'https://www.reddit.com/r/SelfHosted/',
+              icon: 'server-bolt',
               icon_color: '#a57685'
             },
             {
@@ -183,8 +183,8 @@ const CONFIG = new Config({
               url: 'https://dev.to'
             },
             {
-              name: 'mataroa.blog',
-              url: 'https://collection.mataroa.blog',
+              name: 'noted.lol',
+              url: 'https://noted.lol',
             }
           ]
         },
@@ -192,14 +192,14 @@ const CONFIG = new Config({
           name: 'misc',
           links: [
             {
-              name: 'post office',
-              url: 'http://afternoon.dynu.com/letterbox.html',
-              icon: 'mailbox'
+              name: 'hakatime',
+              url: 'http://haka.jonte.au',
+              icon: 'code'
             },
             {
-              name: 'rust docs',
-              url: 'https://doc.rust-lang.org/book/',
-              icon: 'notebook',
+              name: 'github',
+              url: 'https://github.com/jontstaz',
+              icon: 'brand-github',
               icon_color: '#977a3a'
             }
           ]
