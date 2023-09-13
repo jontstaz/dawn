@@ -30,10 +30,56 @@ const CONFIG = new Config({
   openLastVisitedTab: false,
   tabs: [
     {
-      name: 'boards',
+      name: 'reading',
       background_url: 'src/img/banners/bg-1.gif',
       categories: [{
-        name: 'fun',
+        name: 'subs + lemmy',
+        links: [
+          {
+            name: 'r/unixporn',
+            url: 'https://www.reddit.com/r/unixporn/'
+          },
+          {
+            name: 'r/selfhosted',
+            url: 'https://www.reddit.com/r/SelfHosted/',
+          },
+          {
+            name: 'r/programming',
+            url: 'https://www.reddit.com/r/programming/'
+          },
+          {
+            name: 'l/selfhosted',
+            url: 'https://programming.dev/c/selfhosted@lemmy.world',
+          },
+          {
+            name: 'l/piracy',
+            url: 'https://programming.dev/c/piracy@lemmy.dbzer0.com',
+          }
+          ]
+        },
+        {
+        name: 'blogs',
+        links: [
+          {
+            name: 'krebsonsecurity',
+            url: 'https://krebsonsecurity.com'
+          },
+          {
+            name: 'hackernews',
+            url: 'https://news.ycombinator.com/'
+          },
+          {
+            name: 'dev.to',
+            url: 'https://dev.to'
+          },
+          {
+            name: 'noted.lol',
+            url: 'https://noted.lol',
+          }
+          ]
+        },
+        {
+        name: 'boards',
         links: [
           {
             url: 'https://4chan.org/biz/',
@@ -60,36 +106,6 @@ const CONFIG = new Config({
             name: '/r9k/',
             url: 'https://4chan.org/r9k/',
             icon: 'robot'
-          }
-        ]
-      },
-      {
-        name: 'Comfy',
-        links: [
-          {
-            name: '/lounge/',
-            url: 'https://sushigirl.us/lounge/catalog.html'
-          },
-          {
-            name: '/comfy/',
-            url: 'https://anon.cafe/comfy/catalog.html'
-          }
-        ]
-      },
-      {
-        name: 'Technology',
-        links: [
-          {
-            name: '/g/',
-            url: 'https://4chan.org/g/',
-          },
-          {
-            name: '/Δ/',
-            url: 'https://archive.arisuchan.jp/%CE%94/catalog.html'
-          },
-          {
-            name: '/λ/',
-            url: 'https://www.lainchan.org/%CE%BB/catalog.html'
           },
           {
             name: '/sec/',
@@ -101,95 +117,64 @@ const CONFIG = new Config({
             icon: 'code'
           }
         ]
-      }
-      ]
+      }]
     },
     {
-      name: 'music',
+      name: 'code',
       background_url: 'src/img/banners/bg-2.gif',
       categories: [
         {
-          name: 'music services',
+          name: 'discovery',
           links: [
             {
-              url: 'https://soundcloud.com/',
-              icon: 'brand-soundcloud',
-              icon_color: '#c57750'
+              name: 'ProductHunt',
+              url: 'https://producthunt.com',
+              icon: 'brand-producthunt'
             },
             {
-              url: 'https://youtu.be/',
-              icon: 'brand-youtube',
-              icon_color: '#996767'
+              name: 'CodeCanyon',
+              url: 'https://codecanyon.net',
+              icon: 'basket-code'
             },
             {
-              url: 'https://r-a-d.io/',
-              icon: 'radio'
+              name: 'Trending Github',
+              url: 'https://github.com/trending',
+              icon: 'brand-github'
             },
+            {
+              name: 'NullPHPScript',
+              url: 'https://nullphpscript.com/',
+              icon: 'brand-php'
+            }
           ]
         },
         {
-          name: 'music boards',
+          name: 'Forums',
           links: [
             {
-              name: '/music/',
-              url: 'https://lainchan.org/music/',
+              name: 'Nulled',
+              url: 'https://nulled.to',
               icon: 'disc'
             },
             {
-              name: '/mu/',
+              name: 'Cracked',
+              url: 'https://cracked.io',
+              icon: 'disc'
+            },
+            {
+              name: 'HackForums',
+              url: 'https://hackforums.net/',
+              icon: 'disc'
+            },
+            {
+              name: 'Babiato',
               url: 'https://boards.4channel.org/mu/',
-            }
-          ]
-        }
-      ]
-    },
-    {
-      name: 'tech',
-      background_url: 'src/img/banners/bg-3.gif',
-      categories: [
-        {
-          name: 'subreddits',
-          links: [
-            {
-              name: 'r/startpages/',
-              url: 'https://www.reddit.com/r/startpages/'
-            },
-            {
-              name: 'r/unixporn',
-              url: 'https://www.reddit.com/r/unixporn/'
-            },
-            {
-              name: 'r/selfhosted/',
-              url: 'https://www.reddit.com/r/SelfHosted/',
-              icon: 'server-bolt',
-              icon_color: '#a57685'
-            },
-            {
-              name: 'r/programming',
-              url: 'https://www.reddit.com/r/programming/'
+              icon: 'disc'
             }
           ]
         },
         {
-          name: 'blogs',
-          links: [
-            {
-              name: 'fasterthanli',
-              url: 'https://fasterthanli.me/articles',
-              icon: 'anchor'
-            },
-            {
-              name: 'dev.to',
-              url: 'https://dev.to'
-            },
-            {
-              name: 'noted.lol',
-              url: 'https://noted.lol',
-            }
-          ]
-        },
-        {
-          name: 'misc',
+          name: 'me',
           links: [
             {
               name: 'hakatime',
@@ -200,7 +185,11 @@ const CONFIG = new Config({
               name: 'github',
               url: 'https://github.com/jontstaz',
               icon: 'brand-github',
-              icon_color: '#977a3a'
+            },
+            {
+              name: 'gitea',
+              url: 'https://git.jonte.au',
+              icon: 'brand-git',
             }
           ]
         }
