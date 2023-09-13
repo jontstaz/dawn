@@ -6,7 +6,7 @@ const CONFIG = new Config({
   },
   overrideStorage: true, // override localStorage with fixed userconfig values
   temperature: {
-    location: 'Melbourne, Australia',
+    location: 'Melbourne,AU',
     scale: 'C'
   },
   clock: {
