@@ -62,19 +62,23 @@ const CONFIG = new Config({
         links: [
           {
             name: 'krebsonsecurity',
-            url: 'https://krebsonsecurity.com'
+            url: 'https://krebsonsecurity.com',
+            icon: 'shield-check'
           },
           {
             name: 'hackernews',
-            url: 'https://news.ycombinator.com/'
+            url: 'https://news.ycombinator.com/',
+            icon: 'news'
           },
           {
             name: 'dev.to',
-            url: 'https://dev.to'
+            url: 'https://dev.to',
+            icon: 'code-circle'
           },
           {
             name: 'noted.lol',
             url: 'https://noted.lol',
+            icon: 'note'
           }
           ]
         },
@@ -109,7 +113,8 @@ const CONFIG = new Config({
           },
           {
             name: '/sec/',
-            url: 'https://www.lainchan.org/sec/catalog.html'
+            url: 'https://www.lainchan.org/sec/catalog.html',
+            icon: 'virus-search'
           },
           {
             name: '/prog/',
