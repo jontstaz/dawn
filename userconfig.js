@@ -117,8 +117,8 @@ const CONFIG = new Config({
             icon: 'virus-search'
           },
           {
-            name: '/prog/',
-            url: 'https://boards.420chan.org/prog/',
+            name: '/λ/',
+            url: 'https://www.lainchan.org/%CE%BB/catalog.html',
             icon: 'code'
           }
         ]
